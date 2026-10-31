@@ -92,7 +92,25 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       <p class="tag">Relógio masculino</p>
       <h1>Glacier Master</h1>
       <p class="lead">Mostrador azul-gelo com textura de colmeia, bisel canelado e pulseira de aço com fecho butterfly.</p>
-      <p class="price">R$ 129,90 <small>Compra feita no Mercado Livre</small></p>
+      <p class="price"><div class="oferta">
+  <span class="selo">OFERTA LIMITADA</span>
+  <p class="preco"><s>R$ 129,90</s> <strong>R$ 75,90</strong></p>
+  <p class="tempo">Termina em <span id="contagem"></span></p>
+</div>
+<style>
+.oferta{text-align:center;color:#fff}
+.selo{background:#c9a95c;color:#000;font-size:12px;letter-spacing:2px;padding:4px 10px}
+.preco s{color:#888;font-size:18px}
+.preco strong{color:#c9a95c;font-size:28px;margin-left:8px}
+.tempo{font-size:13px;color:#bbb}
+</style>
+<script>
+const fim = new Date("2026-11-07T23:59:59-03:00");
+setInterval(() => {
+  const d = Math.max(0, fim - new Date()), h = Math.floor(d/36e5), m = Math.floor(d%36e5/6e4), s = Math.floor(d%6e4/1e3);
+  document.getElementById("contagem").textContent = `${h}h ${m}min ${s}s`;
+}, 1000);
+</script> <small>Compra feita no Mercado Livre</small></p>
       <a class="btn" href="https://www.mercadolivre.com.br/up/MLBU5704192115?matt_tool=38524122&amp;pdp_filters=item_id:MLB7912576574" target="_blank" rel="noopener">Comprar no Mercado Livre</a>
       <p class="note">Você é levado ao anúncio e paga com a proteção do Mercado Livre.</p>
     </div>
