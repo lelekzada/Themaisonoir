@@ -106,12 +106,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .tempo{font-size:13px;color:#bbb;margin:0 0 12px}
 </style>
 <script>
-const fim = new Date("2026-11-20T23:59:59-03:00");
+const fim = new Date("2026-11-05T23:59:59-03:00");
 setInterval(() => {
   const d = Math.max(0, fim - new Date()), h = Math.floor(d/36e5), m = Math.floor(d%36e5/6e4), s = Math.floor(d%6e4/1e3);
   document.getElementById("contagem").textContent = `${h}h ${m}min ${s}s`;
 }, 1000);
-</script> <small>Compra feita no Mercado Livre</small></p>
+</script> 
       <a class="btn" href="https://www.mercadolivre.com.br/up/MLBU5704192115?matt_tool=38524122&amp;pdp_filters=item_id:MLB7912576574" target="_blank" rel="noopener">Comprar no Mercado Livre</a>
       <p class="note">Você é levado ao anúncio e paga com a proteção do Mercado Livre.</p>
     </div>
