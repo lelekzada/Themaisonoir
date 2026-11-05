@@ -115,7 +115,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .tempo{font-size:13px;color:#bbb;margin:0 0 12px}
 </style>
 <script>
-const fim = new Date("2026-11-05T23:59:59-03:00");
+const fim = new Date("2026-11-15T23:59:59-03:00");
 setInterval(() => {
   const d = Math.max(0, fim - new Date()), h = Math.floor(d/36e5), m = Math.floor(d%36e5/6e4), s = Math.floor(d%6e4/1e3);
   document.getElementById("contagem").textContent = `${h}h ${m}min ${s}s`;
